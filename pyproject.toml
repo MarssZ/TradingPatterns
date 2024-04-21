@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "patternpy"
+version = "1.0"
+repository = "https://github.com/keithorange/patternpy"
+description = "Trading analysis with high-speed pattern recognition, leveraging Pandas & Numpy. Effortlessly spot Head & Shoulders, Tops & Bottoms, Supports & Resistances. For experts & beginners. #TradingMadeEasy 🔥"
+authors = ["Keith Orange"]
+license = "CC BY-NC-SA 4.0"
+readme = "README.md"
+packages = [
+    { include = "tradingpatterns" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.24.2"
+pandas = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.2.2"
+nose = "^1.3.7"
+Sphinx = "^6.1.3"
+sphinx-rtd-theme-citus = "^0.5.25"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
